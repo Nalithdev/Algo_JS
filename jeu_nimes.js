@@ -10,6 +10,7 @@ for(i = 0 ; i <20 ; i++){
 }
 document.write("</div>")
 function del(){
+
   console.log(x)
   console.log(w)
     if ( x >= 3 ||w === true){
@@ -32,8 +33,10 @@ function del(){
     boucle(v)
 
     }
+  }
+  
     
-}
+
 
 function boucle(){
   
@@ -47,6 +50,9 @@ function boucle(){
 document.write("</div>")
 document.write('<button onclick="fin_tour()">Fin du tour</button>')
 document.write('  <script src="jeu_nimes.js"></script>'); 
+if(v <= 0){
+  document.write('<p> Le Joueur '+ y  +' à gagner</p>')
+}
 }
 
 function fin_tour(){
@@ -60,3 +66,6 @@ function fin_tour(){
     return w = false;
   }
 }
+
+
+
