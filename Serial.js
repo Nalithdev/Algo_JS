@@ -1,3 +1,5 @@
+let prenom=["Pierrick" , "NicoC" , "NicoD" , "Alexis" , "Guillaume"]
+
 class Serial{
     constructor(nom , hp) {
         this.nom = nom;
@@ -21,11 +23,11 @@ function personne(ns){
     return Math.random()
 }
 Jason=  new Serial("Jason" , 100)
-alcoolo = new survivor("alcoolo" , 0.5 , 0.3 , 0.2)
-blonde = new survivor("blonde" , 0.7 , 0.2 , 0.1)
-con = new survivor("con" , 0.3 , 0.6 , 0.1 )
-gros = new survivor("gros" , 0.6 , 0.1 , 0.3)
-intello = new survivor("intello" , 0.7 , 0.1 , 0.2)
+alcoolo = new survivor(prenom[Math.floor(Math.random() * 5)] , 0.5 , 0.3 , 0.2)
+blonde = new survivor(prenom[Math.floor(Math.random() * 5)] , 0.7 , 0.2 , 0.1)
+con = new survivor(prenom[Math.floor(Math.random() * 5)] , 0.3 , 0.6 , 0.1 )
+gros = new survivor(prenom[Math.floor(Math.random() * 5)] , 0.6 , 0.1 , 0.3)
+intello = new survivor(prenom[Math.floor(Math.random() * 5)] , 0.7 , 0.1 , 0.2)
 survivant = [ alcoolo , blonde , con , gros , intello]
 while(Jason.hp >= 0 && survivant.length > 0)
 {
