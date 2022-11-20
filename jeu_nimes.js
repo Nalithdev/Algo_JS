@@ -23,7 +23,7 @@ function del(){
             y= 1
         }
         w= false
-        boucle(v)
+        document.write("Appuie sur fin de tour')
         
     }
     else{
