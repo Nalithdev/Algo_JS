@@ -3,10 +3,10 @@ let x = 0;
 let y = 1
 w= false
 document.write("<h2>Joueur "+ y +" à toi</h2>")
-document.write("<div>")
+document.write("<div class='planche'>")
 
 for(i = 0 ; i <20 ; i++){
-    document.write('<p onclick="del()"> I </p>')
+    document.write('<div onclick="del()" class="baton"> I </div>')
 }
 document.write("</div>")
 function del(){
@@ -23,6 +23,7 @@ function del(){
             y= 1
         }
         w= false
+        v = v - 1
         boucle(v)
         
     }
@@ -43,15 +44,15 @@ function boucle(){
   document.body.innerHTML = '';
   document.write("<h2>Joueur "+ y +" à toi</h2>")
   document.write('<link rel="stylesheet" href="style.css">');
-  document.write("<div>")
+  document.write("<div class='planche'>")
   for(i = 0 ; i < v ; i++){
-    document.write('<p onclick="del()"> I </p>')
+    document.write('<div onclick="del()" class="baton"> I </div>')
 }
 document.write("</div>")
 document.write('<button onclick="fin_tour()">Fin du tour</button>')
 document.write('  <script src="jeu_nimes.js"></script>'); 
 if(v <= 0){
-  document.write('<p> Le Joueur '+ y  +' à gagner</p>')
+  document.write('<p> Le Joueur '+ y  +' à perdu</p>')
 }
 }
 

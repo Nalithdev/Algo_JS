@@ -10,12 +10,17 @@
 */
 .planche{
   display: flex;
-  width: 100%;
-  gap: 10px;
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+  gap: 20px;
   justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: burlywood;
 }
 .baton{
   width: 10px;
   background-color: black;
-  height: 20px;
+  height: 40px;
 }
