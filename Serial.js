@@ -37,7 +37,7 @@ while(Jason.hp >= 0 && survivant.length > 0)
     console.log(survi)
     let prob = proba();
     if (prob <= survi.pm){
-        console.log(survi.nom + "est mort se soir")
+        console.log(survi.nom + " est mort se soir")
         survivant.splice(perso , 1);
         console.log(survivant)
     }

@@ -1,9 +1,21 @@
-div{
+/*  div{
+    display: flex;
+    gap : 10px;
+    padding-left: 40%;
+    width: auto;
+  }
+  div p{
+    text-align: center;
+  }
+*/
+.planche{
   display: flex;
-  gap : 10px;
-  padding-left: 40%;
-  width: auto;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
 }
-div p{
-  text-align: center;
+.baton{
+  width: 10px;
+  background-color: black;
+  height: 20px;
 }

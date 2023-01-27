@@ -13,7 +13,7 @@ function del(){
 
   console.log(x)
   console.log(w)
-    if ( x >= 3 ||w === true){
+    if ( x >= 3 || w === true){
       
         x= 0
         if (y === 1 ) {
